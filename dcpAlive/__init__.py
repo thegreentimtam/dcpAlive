@@ -80,7 +80,7 @@ def dcpAlive( input, output = '.', name = False, type = 'FTR' ):
     ], stdout=subprocess.PIPE )
     audio = getDCPAudio( project )
     estimatedSize = round ( ( getDur( input ) + 1 ) * 864000 )
-    with alive_bar( ffAlive.getTotal( input ), manual=True ) as bar:
+    with alive_bar( ffAlive.ffGetTotal( input ), manual=True ) as bar:
         while( os.path.exists( audio ) ):
             try:
                 bar( os.path.getsize( audio ) / estimatedSize )

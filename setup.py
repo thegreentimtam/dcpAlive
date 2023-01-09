@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dcpAlive",
-    version="1.0.0",
+    version="1.0.2",
     author="Tim Green",
     author_email="the.green.timtam@gmail.com",
     description="DCP-o-Matic with Progress Bars",
